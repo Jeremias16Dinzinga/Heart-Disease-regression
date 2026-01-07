@@ -36,20 +36,20 @@ dataset = dataset.dropna().reset_index(drop=True)
 
 dataset.to_csv(clean_dataset_filename, index=False)
 
-# scatter_plot(
-#     dataset["age"],
-#     dataset["thalach"],
-#     "Idade",
-#     "Frequência Cardíaca Máxima",
-#     "Idade vs Thalach"
-# )
+scatter_plot(
+     dataset["age"],
+     dataset["thalach"],
+     "Idade",
+     "Frequência Cardíaca Máxima",
+     "Idade vs Thalach"
+ )
 
-# display_correlation(
-#     dataset["age"],
-#     dataset["target"],
-#     "Idade",
-#     "Doença Cardíaca"
-# )
+display_correlation(
+     dataset["age"],
+     dataset["target"],
+     "Idade",
+     "Doença Cardíaca"
+ )
 
 X = dataset.drop(columns=["target"])
 y = dataset["target"]
