@@ -7,7 +7,7 @@ from regression_perfomance_metrics import display_performance_metrics
 train_filename = "./data/cleveland_train.csv"
 test_filename = "./data/cleveland_test.csv"
 targets = ["target"]
-n_neighbors = 9
+n_neighbors = 15
 p = 1 # minkowski
 
 train_dataset = pd.read_csv(train_filename)
